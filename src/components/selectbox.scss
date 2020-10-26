@@ -1,0 +1,25 @@
+.col-sm {
+    padding: 0px !important;
+    .select {
+        width: 380px;
+        margin-top: -60px;
+        .form-control-lg {
+            height: calc(2em + 1rem + 2px) !important;
+            border-radius: 0px !important;
+        }
+    }
+}
+.checkgender {
+    margin-left: 35px;
+    margin-top: 15px;
+}
+.form-check-label {
+    margin: 7px 31px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+}

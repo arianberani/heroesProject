@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import './components/Navbar'
+import Navbar from './components/Navbar';
+import Language from './components/Language';
+import Rooms from './components/Rooms';
+import Moreinfo from './components/Moreinfo';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+	BrowserRouter as Router,
+	Route,
+	Switch
+} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return ( <Router >
+		<div className = "App" >
+		<div className = "backimg" >
+		<div className = "layer" >
+		<Language />
+		<Navbar />
+		</div> 
+		</div > 
+		<Switch >
+		<Route exact path = "/" >
+		<Rooms />
+		</Route> <Route path = "/heros/:slug"
+		component = {
+			Moreinfo
+		}/> </Switch > 
+		</div> </Router >
+	);
 }
 
 export default App;

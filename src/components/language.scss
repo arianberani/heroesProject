@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+}
+
+.backimg {
+    background-image: url(../img/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .layer {
+        background-color: rgba(233, 176, 64, 0.3);
+        color: white;
+
+        .item {
+            padding: 10px;
+
+            .push {
+                margin-left: auto;
+            }
+
+        }
+
+    }
+}
+
+.push {
+    margin-left: auto;
+
+
+    .language {
+        display: flex;
+
+
+        .language-li {
+            margin: 0px 6px;
+            list-style: none;
+        }
+    }
+}
